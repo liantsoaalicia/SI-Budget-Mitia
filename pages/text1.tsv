@@ -1,0 +1,185 @@
+			Rubirque 	Periode 1			Periode 2			Periode 3			Periode 4			Periode 5			Periode 6			Periode 7			Periode 8			Periode 9			Periode 10			Periode 11			Periode 12	
+				Prevision	Realisation	Ecart	Prevision	Realisation	Ecart	Prevision	Realisation	Ecart	Prevision	Realisation	Ecart	Prevision	Realisation	Ecart	Prevision	Realisation	Ecart	Prevision	Realisation	Ecart	Realisation	Ecart	Prevision	Realisation	Ecart	Prevision	Realisation	Ecart	Prevision	Realisation	Ecart	Prevision	Realisation	Ecart
+			Solde Depart																																			
+Departement	types	nature	categories																																			
+Département Administratif	Charges fixes	Frais de scolarité	Recette																																			
+Département Disciplinaire	Charges fixes	Frais de certification	Recette																																			
+Département de l'Enseignement et de la Pédagogie	Charges fixes	Salaires et charges sociales	Recette																																			
+Département de Recherche et Développement (LABS, …)	Charges variables	Création et gestion de projets	Dépense																																			
+Département Réseaux et Maintenance	Charges variables	Matériels de maintenance	Dépense																																			
+Département Administratif	Charges fixes	Salaires et charges sociales	Dépense																																			
+Département Disciplinaire	Charges variables	Achat de matériel pédagogique	Dépense																																			
+Département de l'Enseignement et de la Pédagogie	Charges variables	Formation des enseignants	Dépense																																			
+Département de l'Enseignement et de la Pédagogie	Charges fixes	Développement de curricula	Dépense																																			
+Département de l'Enseignement et de la Pédagogie	Charges variables	Organisation d'événements pédagogiques	Dépense																																			
+Département ou Service d'Entretien	Charges variables	Fournitures électroménagers	Dépense																																			
+Département ou Service d'Entretien	Charges fixes	Salaires	Dépense																																			
+Département ou Service de Sécurité	Charges fixes	Salaires	Dépense																																			
+Département ou Service de Sécurité	Charges variables	Équipements de sécurité (caméras, alarmes)	Dépense																																			
+Département des Équipements	Charges fixes	Fournitures scolaires	Dépense																																			
+Département des Équipements	Charges variables	Achat de matériel informatique	Dépense																																			
+Département Multimédia et Réseaux Sociaux	Charges fixes	Salaires	Dépense																																			
+Département Multimédia et Réseaux Sociaux	Charges variables	Achat d'équipements multimédias (caméras, micros, logiciels)	Dépense																																			
+Département Multimédia et Réseaux Sociaux	Charges variables	Gestion des réseaux sociaux	Dépense																																			
+Département Réseaux et Maintenance	Charges variables	Matériels de maintenance	Dépense																																			
+Département Réseaux et Maintenance	Charges fixes	Maintenance du réseau Wi-Fi	Dépense																																			
+Département Réseaux et Maintenance	Charges variables	Achat d'ordinateurs pour étudiants	Dépense																																			
+Département Réseaux et Maintenance	Charges variables	Maintenance des ordinateurs	Dépense																																			
+Département Réseaux et Maintenance	Charges fixes	Salaires du personnel technique	Dépense																																			
+			Solde Final																																			
+
+
+
+voici un modele du fichier du transaction.csv
+departement_id,categorie_id,periode_id,montant,date_transaction
+1,1,1,500.50,2025-03-01 10:00:00
+1,2,1,300.25,2025-03-02 14:30:00
+2,3,2,1000.00,2025-03-03 09:15:00
+2,4,2,750.75,2025-03-04 16:45:00
+voici les tables : mysql> select * from departements;
++----+------------------------------------------------+---------------------+
+| id | nom                                            | date_creation       |
++----+------------------------------------------------+---------------------+
+|  1 | Dpartement de Recherche et Dveloppement        | 2025-03-11 10:07:20 |
+|  2 | Dpartement Rseaux et Maintenance               | 2025-03-11 10:07:20 |
+|  3 | Dpartement Administratif                       | 2025-03-11 10:07:20 |
+|  4 | Dpartement Disciplinaire                       | 2025-03-12 06:30:34 |
+|  5 | Dpartement de l'Enseignement et de la Pdagogie | 2025-03-12 06:30:34 |
+|  6 | Dpartement ou Service d'Entretien              | 2025-03-12 06:30:34 |
+|  7 | Dpartement ou Service de Scurit                | 2025-03-12 06:30:34 |
+|  8 | Dpartement des quipements                      | 2025-03-12 06:30:34 |
+|  9 | Dpartement Multimdia et Rseaux Sociaux         | 2025-03-12 06:30:34 |
++----+------------------------------------------------+---------------------+
+mysql> select * from periodes;;
++----+------------+------------+------------+
+| id | nom        | date_debut | date_fin   |
++----+------------+------------+------------+
+|  1 | Periode 1  | 2025-01-01 | 2025-01-31 |
+|  2 | Periode 2  | 2025-02-01 | 2025-02-28 |
+|  3 | Periode 3  | 2025-03-01 | 2025-03-31 |
+|  4 | Periode 4  | 2025-04-01 | 2025-04-30 |
+|  5 | Periode 5  | 2025-05-01 | 2025-05-31 |
+|  6 | Periode 6  | 2025-06-01 | 2025-06-30 |
+|  7 | Periode 7  | 2025-07-01 | 2025-07-31 |
+|  8 | Periode 8  | 2025-08-01 | 2025-08-31 |
+|  9 | Periode 9  | 2025-09-01 | 2025-09-30 |
+| 10 | Periode 10 | 2025-10-01 | 2025-10-31 |
+| 11 | Periode 11 | 2025-11-01 | 2025-11-30 |
+| 12 | Periode 12 | 2025-12-01 | 2025-12-31 |
++----+------------+------------+------------+
+mysql> select * from departements;
++----+------------------------------------------------+---------------------+
+| id | nom                                            | date_creation       |
++----+------------------------------------------------+---------------------+
+|  1 | Dpartement de Recherche et Dveloppement        | 2025-03-11 10:07:20 |
+|  2 | Dpartement Rseaux et Maintenance               | 2025-03-11 10:07:20 |
+|  3 | Dpartement Administratif                       | 2025-03-11 10:07:20 |
+|  4 | Dpartement Disciplinaire                       | 2025-03-12 06:30:34 |
+|  5 | Dpartement de l'Enseignement et de la Pdagogie | 2025-03-12 06:30:34 |
+|  6 | Dpartement ou Service d'Entretien              | 2025-03-12 06:30:34 |
+|  7 | Dpartement ou Service de Scurit                | 2025-03-12 06:30:34 |
+|  8 | Dpartement des quipements                      | 2025-03-12 06:30:34 |
+|  9 | Dpartement Multimdia et Rseaux Sociaux         | 2025-03-12 06:30:34 |
++----+------------------------------------------------+---------------------+
+mysql> select * from categories;
++----+---------+-------------------+-----------------------------------------------------------+-------------------------------------+---------------------------------------------------------------+---------------------+
+| id | type    | charge_type       | nature                                                    | source                              | destination                                                   | date_creation       |
++----+---------+-------------------+-----------------------------------------------------------+-------------------------------------+---------------------------------------------------------------+---------------------+
+|  1 | Dpense  | Charges variables | Cration et gestion de projets                             | Subventions, contrats de recherche  | Financement des projets de recherche, salaires des chercheurs | 2025-03-11 10:07:24 |
+|  2 | Dpense  | Charges variables | Matriels de maintenance                                   | Budget universit, subventions       | tudiants, personnel, infrastructures                          | 2025-03-11 10:07:24 |
+|  3 | Recette | Charges fixes     | Frais de scolarit                                         | tudiants                            | Fonctionnement du dpartement                                  | 2025-03-11 10:07:24 |
+|  4 | Recette | Charges fixes     | Frais de certification                                    | tudiants, entreprises partenaires   | Financement des programmes disciplinaires                     | 2025-03-12 06:30:37 |
+|  5 | Recette | Charges fixes     | Salaires et charges sociales                              | Budget universit                    | Financement des programmes pdagogiques                        | 2025-03-12 06:30:37 |
+|  6 | Dpense  | Charges fixes     | Salaires et charges sociales                              | Budget universit                    | Personnel administratif                                       | 2025-03-12 06:30:37 |
+|  7 | Dpense  | Charges variables | Achat de matriel pdagogique                               | Budget universit, subventions       | tudiants, enseignants                                         | 2025-03-12 06:30:37 |
+|  8 | Dpense  | Charges variables | Formation des enseignants                                 | Budget universit                    | Enseignants                                                   | 2025-03-12 06:30:37 |
+|  9 | Dpense  | Charges fixes     | Dveloppement de curricula                                 | Subventions                         | tudiants, programmes acadmiques                               | 2025-03-12 06:30:37 |
+| 10 | Dpense  | Charges variables | Organisation d'vnements pdagogiques                       | Budget universit, sponsors          | tudiants, communaut universitaire                             | 2025-03-12 06:30:37 |
+| 11 | Dpense  | Charges variables | Fournitures lectromnagers                                 | Budget universit                    | Maintenance des infrastructures                               | 2025-03-12 06:30:37 |
+| 12 | Dpense  | Charges fixes     | Salaires                                                  | Budget universit                    | Personnel d'entretien                                         | 2025-03-12 06:30:37 |
+| 13 | Dpense  | Charges fixes     | Salaires                                                  | Budget universit                    | Agents de scurit                                              | 2025-03-12 06:30:37 |
+| 14 | Dpense  | Charges variables | quipements de scurit (camras, alarmes)                    | Budget universit                    | Scurit des tudiants et du personnel                           | 2025-03-12 06:30:37 |
+| 15 | Dpense  | Charges fixes     | Fournitures scolaires                                     | Budget universit                    | tudiants                                                      | 2025-03-12 06:30:37 |
+| 16 | Dpense  | Charges variables | Achat de matriel informatique                             | Budget universit, subventions       | tudiants, laboratoires                                        | 2025-03-12 06:30:37 |
+| 17 | Dpense  | Charges fixes     | Salaires                                                  | Budget universit                    | Personnel multimdia                                           | 2025-03-12 06:30:37 |
+| 18 | Dpense  | Charges variables | Achat d'quipements multimdias (camras, micros, logiciels) | Budget universit                    | Communication interne et externe                              | 2025-03-12 06:30:37 |
+| 19 | Dpense  | Charges variables | Gestion des rseaux sociaux                                | Budget universit                    | Promotion de l'universit                                      | 2025-03-12 06:30:37 |
+| 20 | Dpense  | Charges variables | Matriels de maintenance                                   | Budget universit, subventions       | tudiants, personnel, infrastructures                          | 2025-03-12 06:30:37 |
+| 21 | Dpense  | Charges fixes     | Maintenance du rseau Wi-Fi                                | Budget universit                    | tudiants, personnel, visiteurs                                | 2025-03-12 06:30:37 |
+| 22 | Dpense  | Charges variables | Achat d'ordinateurs pour tudiants                         | Budget universit, dons, subventions | tudiants (prt ou utilisation en salle)                        | 2025-03-12 06:30:37 |
+| 23 | Dpense  | Charges variables | Maintenance des ordinateurs                               | Budget universit                    | tudiants, laboratoires                                        | 2025-03-12 06:30:37 |
+| 24 | Dpense  | Charges fixes     | Salaires du personnel technique                           | Budget universit                    | Personnel du dpartement                                       | 2025-03-12 06:30:37 |
++----+---------+-------------------+-----------------------------------------------------------+-------------------------------------+---------------------------------------------------------------+---------------------+
+			Rubrique	Periode1	Periode2	Periode3	Periode4	Periode5	Periode6	Periode7	Periode8	Periode9	Periode10	Periode11	Periode12
+Deptement	types	nature	categories	Realisation	Realisation	Realisation	Realisation	Realisation	Realisation	Realisation	Realisation	Realisation	Realisation	Realisation	Realisation
+Déptement Administratif	Chges fixes	Frais de scolité	Recette	200000000	200000000	200000000	200000000	200000000	200000000	200000000	200000000	200000000	200000000	200000000	800000000
+Déptement Disciplinaire	Chges fixes	Frais de certification	Recette	12250000	8600000	6150000	3950000	3650000	3450000	10950000	7300000	5650000	4150000	3950000	3680000
+Déptement de l'Enseignement et de la Pédagogie	Chges fixes	Salaires et Chges sociales	Recette	7400000	4950000	4450000	3700000	3200000	2950000	6650000	4650000	4150000	3450000	3200000	2950000
+Déptement de Recherche et Développement (LABS …)	Chges viables	Création et gestion de projets	Dépense	8150000	6750000	6050000	5450000	5150000	4950000	7750000	6500000	5950000	5450000	5250000	5050000
+Déptement Réseaux et Maintenance	Chges viables	Matériels de maintenance	Dépense	3450000	2950000	2650000	2400000	2300000	2200000	3350000	2850000	2600000	2400000	2300000	2200000
+Déptement Administratif	Chges fixes	Salaires et Chges sociales	Dépense	100000000	100000000	100000000	100000000	100000000	100000000	100000000	100000000	100000000	100000000	100000000	100000000
+Déptement Disciplinaire	Chges viables	Achat de matériel pédagogique	Dépense	4500000	2450000	1950000	1400000	1200000	1100000	4100000	2350000	1850000	1400000	1200000	1100000
+Déptement de l'Enseignement et de la Pédagogie	Chges viables	Formation des enseignants	Dépense	3950000	2900000	2400000	1900000	1700000	1600000	3650000	2800000	2300000	1900000	1700000	1600000
+Déptement de l'Enseignement et de la Pédagogie	Chges fixes	Développement de curricula	Dépense	2500000	1500000	1250000	1000000	850	750	2250000	1450000	1200000	1000000	850	750
+Déptement de l'Enseignement et de la Pédagogie	Chges viables	Organisation d'événements pédagogiques	Dépense	2450000	1400000	1200000	1000000	900	800	2250000	1300000	1100000	1000000	900	800
+Déptement ou Service d'Entretien	Chges viables	Fournitures électroménagers	Dépense	2050000	1400000	1100000	900	800	700	1950000	1300000	1000000	900	800	700
+Déptement ou Service d'Entretien	Chges fixes	Salaires	Dépense	4750000	4750000	4750000	4750000	4750000	4750000	4750000	4750000	4750000	4750000	4750000	4750000
+Déptement ou Service de Sécurité	Chges fixes	Salaires	Dépense	5250000	5250000	5250000	5250000	5250000	5250000	5250000	5250000	5250000	5250000	5250000	5250000
+Déptement ou Service de Sécurité	Chges viables	Équipements de sécurité (caméras almes)	Dépense	1950000	1100000	900	700	600	500	1850000	1000000	800	700	600	500
+Déptement des Équipements	Chges fixes	Fournitures scolaires	Dépense	4250000	2750000	2250000	1750000	1450000	1250000	3950000	2550000	2150000	1750000	1450000	1250000
+Déptement des Équipements	Chges viables	Achat de matériel informatique	Dépense	7050000	4000000	3000000	2000000	1700000	1500000	6750000	3800000	2800000	2000000	1700000	1500000
+Déptement Multimédia et Réseaux Sociaux	Chges fixes	Salaires	Dépense	3750000	3750000	3750000	3750000	3750000	3750000	3750000	3750000	3750000	3750000	3750000	3750000
+Déptement Multimédia et Réseaux Sociaux	Chges viables	Achat d'équipements multimédias (caméras micros logiciels)	Dépense	2950000	1750000	1450000	1150000	950	850	2750000	1650000	1350000	1150000	950	850
+Déptement Multimédia et Réseaux Sociaux	Chges viables	Gestion des réseaux sociaux	Dépense	1400000	1400000	1400000	1400000	1400000	1400000	1400000	1400000	1400000	1400000	1400000	1400000
+Déptement Réseaux et Maintenance	Chges viables	Matériels de maintenance	Dépense	2450000	1950000	1650000	1350000	1150000	1050000	2350000	1850000	1550000	1350000	1150000	1050000
+Déptement Réseaux et Maintenance	Chges fixes	Maintenance du réseau Wi-Fi	Dépense	1850000	1850000	1850000	1850000	1850000	1850000	1850000	1850000	1850000	1850000	1850000	1850000
+Déptement Réseaux et Maintenance	Chges viables	Achat d'ordinateurs pour étudiants	Dépense	6050000	3500000	2500000	1500000	1200000	1000000	5750000	3300000	2300000	1500000	1200000	1000000
+Déptement Réseaux et Maintenance	Chges viables	Maintenance des ordinateurs	Dépense	2450000	2050000	1650000	1450000	1350000	1250000	2350000	1950000	1550000	1450000	1350000	1250000
+Déptement Réseaux et Maintenance	Chges fixes	Salaires du personnel technique	Dépense	6250000	6250000	6250000	6250000	6250000	6250000	6250000	6250000	6250000	6250000	6250000	6250000
+
+
+creer donne moi le contenue du fichier transaction.csv en fonction des donnes ce cessus
+
+creer moi des inserts into pour la tables solde : 
+-- Create soldes table to track beginning and ending balances for each period and department
+CREATE TABLE soldes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    departement_id INT NOT NULL,
+    periode_id INT NOT NULL,
+    solde_debut DECIMAL(15,2) NOT NULL DEFAULT 0,
+    solde_fin DECIMAL(15,2) DEFAULT NULL,
+    FOREIGN KEY (departement_id) REFERENCES departements(id) ON DELETE CASCADE,
+    FOREIGN KEY (periode_id) REFERENCES periodes(id) ON DELETE CASCADE,
+    UNIQUE(departement_id, periode_id)
+);
+pour periode id 1 
+mysql> select * from departements;
++----+--------------------------------------------------+---------------------+
+| id | nom                                              | date_creation       |
++----+--------------------------------------------------+---------------------+
+|  1 | Departement de Recherche et Developpement        | 2025-03-19 06:33:36 |
+|  2 | Departement Reseaux et Maintenance               | 2025-03-19 06:33:36 |
+|  3 | Departement Administratif                        | 2025-03-19 06:33:36 |
+|  4 | Departement Disciplinaire                        | 2025-03-19 06:33:37 |
+|  5 | Departement de l'Enseignement et de la Pedagogie | 2025-03-19 06:33:37 |
+|  6 | Departement ou Service d'Entretien               | 2025-03-19 06:33:37 |
+|  7 | Departement ou Service de Securite               | 2025-03-19 06:33:37 |
+|  8 | Departement des equipements                      | 2025-03-19 06:33:37 |
+|  9 | Departement Multimedia et Reseaux Sociaux        | 2025-03-19 06:33:37 |
++----+--------------------------------------------------+---------------------+
+
+INSERT INTO soldes (departement_id, periode_id, solde_debut, solde_fin) VALUES
+(1, 1, 100000.00, NULL), -- Departement de Recherche et Developpement
+(2, 1, 100000.00, NULL), -- Departement Reseaux et Maintenance
+(3, 1, 100000.00, NULL), -- Departement Administratif
+(4, 1, 100000.00, NULL), -- Departement Disciplinaire
+(5, 1, 100000.00, NULL), -- Departement de l'Enseignement et de la Pedagogie
+(6, 1, 100000.00, NULL), -- Departement ou Service d'Entretien
+(7, 1, 100000.00, NULL), -- Departement ou Service de Securite
+(8, 1, 100000.00, NULL), -- Departement des equipements
+(9, 1, 100000.00, NULL); -- Departement Multimedia et Reseaux Sociaux
+
+
+SELECT solde_debut, solde_fin FROM soldes 
+        WHERE periode_id = 1 AND departement_id = 1
+        LIMIT 1;

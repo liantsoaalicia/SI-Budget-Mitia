@@ -1,0 +1,26 @@
+Rubrique	Periode1	Periode2	Periode3	Periode4	Periode5	Periode6	Periode7	Periode8	Periode9	Periode10	Periode11	Periode12
+Deptement	types	nature	categories	Realisation	Realisation	Realisation	Realisation	Realisation	Realisation	Realisation	Realisation	Realisation	Realisation	Realisation	Realisation
+Déptement Administratif	Chges fixes	Frais de scolité	Recette	200000000	200000000	200000000	200000000	200000000	200000000	200000000	200000000	200000000	200000000	200000000	800000000
+Déptement Disciplinaire	Chges fixes	Frais de certification	Recette	12250000	8600000	6150000	3950000	3650000	3450000	10950000	7300000	5650000	4150000	3950000	3680000
+Déptement de l'Enseignement et de la Pédagogie	Chges fixes	Salaires et Chges sociales	Recette	7400000	4950000	4450000	3700000	3200000	2950000	6650000	4650000	4150000	3450000	3200000	2950000
+Déptement de Recherche et Développement (LABS …)	Chges viables	Création et gestion de projets	Dépense	8150000	6750000	6050000	5450000	5150000	4950000	7750000	6500000	5950000	5450000	5250000	5050000
+Déptement Réseaux et Maintenance	Chges viables	Matériels de maintenance	Dépense	3450000	2950000	2650000	2400000	2300000	2200000	3350000	2850000	2600000	2400000	2300000	2200000
+Déptement Administratif	Chges fixes	Salaires et Chges sociales	Dépense	100000000	100000000	100000000	100000000	100000000	100000000	100000000	100000000	100000000	100000000	100000000	100000000
+Déptement Disciplinaire	Chges viables	Achat de matériel pédagogique	Dépense	4500000	2450000	1950000	1400000	1200000	1100000	4100000	2350000	1850000	1400000	1200000	1100000
+Déptement de l'Enseignement et de la Pédagogie	Chges viables	Formation des enseignants	Dépense	3950000	2900000	2400000	1900000	1700000	1600000	3650000	2800000	2300000	1900000	1700000	1600000
+Déptement de l'Enseignement et de la Pédagogie	Chges fixes	Développement de curricula	Dépense	2500000	1500000	1250000	1000000	850	750	2250000	1450000	1200000	1000000	850	750
+Déptement de l'Enseignement et de la Pédagogie	Chges viables	Organisation d'événements pédagogiques	Dépense	2450000	1400000	1200000	1000000	900	800	2250000	1300000	1100000	1000000	900	800
+Déptement ou Service d'Entretien	Chges viables	Fournitures électroménagers	Dépense	2050000	1400000	1100000	900	800	700	1950000	1300000	1000000	900	800	700
+Déptement ou Service d'Entretien	Chges fixes	Salaires	Dépense	4750000	4750000	4750000	4750000	4750000	4750000	4750000	4750000	4750000	4750000	4750000	4750000
+Déptement ou Service de Sécurité	Chges fixes	Salaires	Dépense	5250000	5250000	5250000	5250000	5250000	5250000	5250000	5250000	5250000	5250000	5250000	5250000
+Déptement ou Service de Sécurité	Chges viables	Équipements de sécurité (caméras almes)	Dépense	1950000	1100000	900	700	600	500	1850000	1000000	800	700	600	500
+Déptement des Équipements	Chges fixes	Fournitures scolaires	Dépense	4250000	2750000	2250000	1750000	1450000	1250000	3950000	2550000	2150000	1750000	1450000	1250000
+Déptement des Équipements	Chges viables	Achat de matériel informatique	Dépense	7050000	4000000	3000000	2000000	1700000	1500000	6750000	3800000	2800000	2000000	1700000	1500000
+Déptement Multimédia et Réseaux Sociaux	Chges fixes	Salaires	Dépense	3750000	3750000	3750000	3750000	3750000	3750000	3750000	3750000	3750000	3750000	3750000	3750000
+Déptement Multimédia et Réseaux Sociaux	Chges viables	Achat d'équipements multimédias (caméras micros logiciels)	Dépense	2950000	1750000	1450000	1150000	950	850	2750000	1650000	1350000	1150000	950	850
+Déptement Multimédia et Réseaux Sociaux	Chges viables	Gestion des réseaux sociaux	Dépense	1400000	1400000	1400000	1400000	1400000	1400000	1400000	1400000	1400000	1400000	1400000	1400000
+Déptement Réseaux et Maintenance	Chges viables	Matériels de maintenance	Dépense	2450000	1950000	1650000	1350000	1150000	1050000	2350000	1850000	1550000	1350000	1150000	1050000
+Déptement Réseaux et Maintenance	Chges fixes	Maintenance du réseau Wi-Fi	Dépense	1850000	1850000	1850000	1850000	1850000	1850000	1850000	1850000	1850000	1850000	1850000	1850000
+Déptement Réseaux et Maintenance	Chges viables	Achat d'ordinateurs pour étudiants	Dépense	6050000	3500000	2500000	1500000	1200000	1000000	5750000	3300000	2300000	1500000	1200000	1000000
+Déptement Réseaux et Maintenance	Chges viables	Maintenance des ordinateurs	Dépense	2450000	2050000	1650000	1450000	1350000	1250000	2350000	1950000	1550000	1450000	1350000	1250000
+Déptement Réseaux et Maintenance	Chges fixes	Salaires du personnel technique	Dépense	6250000	6250000	6250000	6250000	6250000	6250000	6250000	6250000	6250000	6250000	6250000	6250000
