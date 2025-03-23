@@ -1,0 +1,25 @@
+
+Département Administratif,Charges fixes,Frais de scolarité,Recette,280000000,280000000,280000000,280000000,280000000,280000000,280000000,280000000,280000000,280000000,280000000,280000000
+Département Disciplinaire,Charges fixes,Frais de certification,Recette,12500000,8750000,6250000,4000000,3750000,3500000,11250000,7500000,5750000,4250000,4000000,3750000
+Département de l'Enseignement et de la Pédagogie,Charges fixes,Salaires et Charges sociales,Recette,7500000,5000000,4500000,3750000,3250000,3000000,6750000,4750000,4250000,3500000,3250000,3000000
+Département de Recherche et Développement,Charges variables,Création et gestion de projets,Dépense,7850000,6450000,5850000,5250000,4950000,4750000,7450000,6250000,5750000,5250000,5050000,4850000
+Département Réseaux et Maintenance,Charges variables,Matériels de maintenance,Dépense,3250000,2750000,2450000,2250000,2150000,2050000,3150000,2650000,2450000,2250000,2150000,2050000
+Département Administratif,Charges fixes,Salaires et Charges sociales,Dépense,100000000,100000000,100000000,100000000,100000000,100000000,100000000,100000000,100000000,100000000,100000000,100000000
+Département Disciplinaire,Charges variables,Achat de matériel pédagogique,Dépense,4250000,2250000,1750000,1250000,1050000,950,3850000,2150000,1650000,1250000,1050000,950
+Département de l'Enseignement et de la Pédagogie,Charges variables,Formation des enseignants,Dépense,3750000,2750000,2250000,1750000,1550000,1450000,3450000,2650000,2150000,1750000,1550000,1450000
+Département de l'Enseignement et de la Pédagogie,Charges fixes,Développement de curricula,Dépense,2500000,1500000,1250000,1000000,850,750,2250000,1450000,1200000,1000000,850,750
+Département de l'Enseignement et de la Pédagogie,Charges variables,Organisation d'événements pédagogiques,Dépense,2250000,1250000,1050000,850,750,650,2050000,1150000,950,850,750,650
+Département ou Service d'Entretien,Charges variables,Fournitures électroménagers,Dépense,1850000,1250000,950,750,650,550,1750000,1150000,850,750,650,550
+Département ou Service d'Entretien,Charges fixes,Salaires,Dépense,4750000,4750000,4750000,4750000,4750000,4750000,4750000,4750000,4750000,4750000,4750000,4750000
+Département ou Service de Sécurité,Charges fixes,Salaires,Dépense,5250000,5250000,5250000,5250000,5250000,5250000,5250000,5250000,5250000,5250000,5250000,5250000
+Département ou Service de Sécurité,Charges variables,Équipements de sécurité,Dépense,1750000,950,750,550,450,350,1650000,850,650,550,450,350
+Département des équipements,Charges fixes,Fournitures scolaires,Dépense,4250000,2750000,2250000,1750000,1450000,1250000,3950000,2550000,2150000,1750000,1450000,1250000
+Département des équipements,Charges variables,Achat de matériel informatique,Dépense,6750000,3750000,2750000,1750000,1450000,1250000,6450000,3550000,2550000,1750000,1450000,1250000
+Département Multimédia et Réseaux Sociaux,Charges fixes,Salaires,Dépense,3750000,3750000,3750000,3750000,3750000,3750000,3750000,3750000,3750000,3750000,3750000,3750000
+Département Multimédia et Réseaux Sociaux,Charges variables,Achat d'équipements multimédias,Dépense,2750000,1550000,1250000,950,750,650,2550000,1450000,1150000,950,750,650
+Département Multimédia et Réseaux Sociaux,Charges variables,Gestion des réseaux sociaux,Dépense,1250000,1250000,1250000,1250000,1250000,1250000,1250000,1250000,1250000,1250000,1250000,1250000
+Département Réseaux et Maintenance,Charges variables,Matériels de maintenance,Dépense,2250000,1750000,1450000,1150000,950,850,2150000,1650000,1350000,1150000,950,850
+Département Réseaux et Maintenance,Charges fixes,Maintenance du réseau Wi-Fi,Dépense,1850000,1850000,1850000,1850000,1850000,1850000,1850000,1850000,1850000,1850000,1850000,1850000
+Département Réseaux et Maintenance,Charges variables,Achat d'ordinateurs pour étudiants,Dépense,5750000,3250000,2250000,1250000,950,750,5450000,3050000,2050000,1250000,950,750
+Département Réseaux et Maintenance,Charges variables,Maintenance des ordinateurs,Dépense,2250000,1850000,1450000,1250000,1150000,1050000,2150000,1750000,1350000,1250000,1150000,1050000
+Département Réseaux et Maintenance,Charges fixes,Salaires du personnel technique,Dépense,6250000,6250000,6250000,6250000,6250000,6250000,6250000,6250000,6250000,6250000,6250000,6250000
